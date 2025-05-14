@@ -1,25 +1,26 @@
 import re
 
 positive_words = [
-    "sangat", "membantu", "bagus", "mantap", "good", "baik", "promo",
-    "top", "mudah", "cepat", "suka", "pelayanan", "ramah", "terimakasih",
-    "terima", "semoga", "keren", "tepat", "puas", "nyaman", "layanan",
-    "memuaskan", "aman", "memudahkan", "murah", "sesuai", "sukses",
-    "mantab", "nice", "bermanfaat", "lancar", "senang", "terbaik",
-    "mantul", "alhamdulillah", "enak", "bener", "terbantu", "makasih",
+    "sangat", "banget", "membantu", "mbantu", "bagus", "mantap", "good", "baik", "promo",
+    "top", "mudah", "gampang", "cepat", "cepet", "suka", "sukak", "pelayanan", "ramah", "terimakasih",
+    "terima", "keren", "tepat","pas", "puas", "seneng", "nyaman", "aman", "layanan",
+    "memuaskan", "memudahkan", "murah", "sesuai", "sukses",
+    "mantab", "mantap", "nice", "bermanfaat", "lancar", "senang", "terbaik",
+    "mantul", "alhamdulillah", "enak", "bener", "benar", "terbantu", "makasih",
     "mempermudah", "berguna", "praktis", "menyenangkan", "gampang",
-    "jos", "cepet", "hemat", "proses", "bantu", "maju"
+    "jos", "hemat", "proses", "bantu", "maju", "cinta"
 ]
 negative_words = [
-    "tidak", "ga", "gak", "lama", "tolong", "kenapa", "malah", "sekali",
-    "gk", "mahal", "susah", "masuk", "apk", "saldo", "update", "biaya",
+    "tidak", "ga", "gak", "lama","lambat", "tolong", "kenapa", "malah", "sekali",
+    "gk", "mahal", "susah", "sulit","masuk", "apk", "saldo", "update", "biaya",
     "kecewa", "kok", "masih", "parah", "tdk", "ribet", "gabisa", "cancel",
     "minta", "terlalu", "kurang", "perbaiki", "masalah", "salah", "gimana",
-    "sampah", "kecewa", "sedih", "marah", "hilang", "jelek", "error", "blokir", 
+    "sampah", "kecewa", "sedih", "marah", "bingung", "hilang", "jelek","jele", "error", "blokir", 
     "eror", "payah", "telat", "suruh", "alasan", "hapus",
     "males", "limit", "mengecewakan", "ko", "lemot", "gajelas",
-    "diperbaiki", "kendala", "bug", "kasian", "denda", "ilang",
-    "buruk", "gagal", "duit", "batal"
+    "diperbaiki", "kendala", "bug", "kasian", "denda", "ilang", "lag",
+    "buruk", "gagal", "duit", "batal", "hilang", "gak sesuai", "tidak sesuai",
+    "ga sesuai", "jebakan", "tidak suka", "aneh"
 ]
 neutral_words = [
     "padahal", "ya", "banyak", "udah", "buat", "jadi",
@@ -36,7 +37,7 @@ neutral_words = [
     "mana", "pembayaran", "masa", "setiap", "uang", "orang", "naik", "lg",
     "dah", "resto", "customer", "cs", "upgrade", "food", "fitur", "g",
     "setelah", "langsung", "orderan", "sampe", "ganti", "sendiri",
-    "pihak", "biar", "jd", "seperti", "coba", "lokasi"
+    "pihak", "biar", "jd", "seperti", "coba", "lokasi", "semoga"
 ]
 
 
