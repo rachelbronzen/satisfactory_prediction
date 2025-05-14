@@ -63,7 +63,7 @@ st.markdown('<p class="big-font">Satisfactory Prediction</p>', unsafe_allow_html
 
 name = st.text_input("Hello! What is your name? 👋", placeholder="Your Name")
 
-st.success(f"Hello {name}! Thank you for using our app. Please enter your review below:")
+st.markdown(f'<div style="color:#ff66a3; font-weight:bold;">Hello {name}! Thank you for using our app. Please enter your review below:</div>', unsafe_allow_html=True)
 
 user_input = st.text_area("Review:")
 model_choice = st.radio("Choose Model:", ["CNN", "Logistic Regression"])
@@ -87,5 +87,5 @@ if st.button("Predict"):
     score = label_encoder.inverse_transform([score_index])[0]
     st.write(f"**Score Prediction {model_choice} :** {score}")
     sentiment = get_sentiment(user_input)
-    st.success(f"**Sentiment Analysis:** {sentiment}")
+    st.markdown(f'<div style="color:#ff66a3; font-weight:bold;">Sentiment Analysis: {sentiment}</div>', unsafe_allow_html=True)
     st.stop()
