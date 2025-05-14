@@ -37,8 +37,8 @@ st.markdown(
             font-weight: bold;
         }
         .stButton>button {
-            background-color: black;
-            color: white;
+            background-color: black !important;
+            color: white !important;
             border-radius: 10px;
             font-size: 16px;
             height: 3em;
@@ -55,13 +55,13 @@ st.markdown(
             border: 1px solid #ffb6c1 !important;
             color: black !important;
         }
-        
+
         .stTextArea textarea::placeholder,
         .stTextInput input::placeholder {
-            color: #cc3366;
+            color: #cc3366 !important;
         }
-        .stRadio>div>label {
-            color: black;
+        label, .stTextInput label, .stTextArea label, .stRadio label {
+            color: black !important;
             font-weight: bold;
         }
         /* Sentiment and Hello Message Color */
