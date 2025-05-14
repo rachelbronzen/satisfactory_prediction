@@ -21,59 +21,62 @@ with open("label_encoder.pkl", "rb") as f:
 
 #STREAMLIT APP
 st.markdown(
-    """
+"""
     <style>
-        .stApp {
-            background: linear-gradient(to bottom, #ffffff, #fdefff);
+        /* GLOBAL STYLES */
+        body, .stApp {
+            background-color: white;
+            color: black;
         }
-        html, body, [class*="css"] {
-            color: black !important;
-            font-family: "Arial", sans-serif;
-        }
+
+        /* TITLE */
         .big-font {
-            font-size:30px !important;
-            color: #ff66a3;
+            font-size: 36px;
+            color: #ff007e;
+            font-weight: bold;
             text-align: center;
-            font-weight: bold;
         }
 
-        .stTextInput>div>div>input,
-        .stTextArea>div>textarea {
-            background-color: #fff0fc !important;
-            border: 2px solid #ffb6c1 !important;
-            color: black !important;
+        /* SUBTITLE */
+        .stMarkdown h2, .stMarkdown h3, .stMarkdown h4 {
+            color: #9b1859;
         }
 
-        .stTextArea textarea::placeholder,
-        .stTextInput input::placeholder {
-            color: #cc3366 !important;
+        /* TEXT INPUT, TEXT AREA, RADIO, BUTTON */
+        input[type="text"],
+        textarea,
+        .stTextInput > div > div > input,
+        .stTextArea textarea,
+        .stRadio > div,
+        .stButton > button {
+            background-color: #ffe3f3 !important;
+            color: #e87fa3 !important;
+            border: none;
         }
 
-        .stButton>button {
-            background-color: #fff0fc !important;
-            color: white !important;
-            border: 2px solid #ffb6c1 !important;
-            font-size: 10px;
-            width: 100%;
-            border-radius: 8px;
+        /* Make radio text pink too */
+        .stRadio label {
+            color: #e87fa3 !important;
         }
 
-        label, .stTextInput label, .stTextArea label, .stRadio label {
-            color: black !important;
-            font-weight: bold;
+        /* Button hover effect */
+        .stButton > button:hover {
+            background-color: #f8cde0 !important;
+            color: #9b1859 !important;
         }
-        .stRadio > div {
-            color: black !important;
+
+        /* Placeholder text */
+        ::placeholder {
+            color: #e87fa3 !important;
+            opacity: 1;
         }
-        /* Sentiment and Hello Message Color */
-        .highlight {
-            color: #ff66a3;
-            font-weight: bold;
+
+        /* Message boxes (like st.warning, st.success) */
+        .stAlert {
+            color: black;
         }
     </style>
-    """,
-    unsafe_allow_html=True
-)
+""", unsafe_allow_html=True)
 
 
 st.markdown('<p class="big-font">Satisfactory Prediction</p>', unsafe_allow_html=True)
