@@ -25,7 +25,7 @@ st.markdown(
     <style>
         /* GLOBAL STYLES */
         body, .stApp {
-            background: linear-gradient(to bottom, #752540, #b42053);
+            background: linear-gradient(to bottom, #2b0615, #460b23);
             color: black;
         }
 
