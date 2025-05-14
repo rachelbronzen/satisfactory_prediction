@@ -23,8 +23,8 @@ with open("label_encoder.pkl", "rb") as f:
 st.markdown(
     """
     <style>
-        body, .stApp {
-            background-color: #ffe6f0;
+        .stApp {
+            background: linear-gradient(to bottom right, #000000, #ffe6f0);
         }
         .big-font {
             font-size:30px !important;
@@ -39,16 +39,20 @@ st.markdown(
             font-size: 16px;
             height: 3em;
             width: 100%;
+            border: none;
         }
-        .stTextInput>div>div>input {
-            background-color: #fff0f5;
-        }
+        .stTextInput>div>div>input,
         .stTextArea>div>textarea {
             background-color: #fff0f5;
+            border: 1px solid #ffb6c1;
+            color: black;
         }
         .stRadio>div>label {
             color: #cc3366;
             font-weight: bold;
+        }
+        .css-1aumxhk {
+            background-color: transparent;
         }
     </style>
     """,
