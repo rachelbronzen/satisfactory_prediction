@@ -24,7 +24,8 @@ st.markdown(
     """
     <style>
         .stApp {
-            background: #000000;
+            background: linear-gradient(to bottom, #fff0f5, #ffe6f0);
+            color: black;
         }
         .big-font {
             font-size:30px !important;
@@ -34,7 +35,7 @@ st.markdown(
         }
         .stButton>button {
             background-color: #ff99cc;
-            color: white;
+            color: black;
             border-radius: 10px;
             font-size: 16px;
             height: 3em;
@@ -53,6 +54,9 @@ st.markdown(
         }
         .css-1aumxhk {
             background-color: transparent;
+        }
+        h1, h2, h3, h4, h5, h6, p, label, span, div {
+            color: black;
         }
     </style>
     """,
