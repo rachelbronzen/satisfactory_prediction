@@ -37,20 +37,25 @@ st.markdown(
             font-weight: bold;
         }
         .stButton>button {
-            background-color: #ff99cc;
+            background-color: black;
+            color: white;
             border-radius: 10px;
             font-size: 16px;
             height: 3em;
             width: 100%;
             border: none;
-            color: black;
         }
-        .stTextInput>div>div>input,
+        .stTextInput>div>div>input {
+            background-color: black !important;
+            border: 1px solid #ffb6c1 !important;
+            color: white !important;
+        }
         .stTextArea>div>textarea {
-            background-color: #fff0f5;
-            border: 1px solid #ffb6c1;
-            color: black;
+            background-color: #fff0f5 !important;
+            border: 1px solid #ffb6c1 !important;
+            color: black !important;
         }
+        
         .stTextArea textarea::placeholder,
         .stTextInput input::placeholder {
             color: #cc3366;
