@@ -36,22 +36,11 @@ st.markdown(
             text-align: center;
             font-weight: bold;
         }
-        .stButton>button {
-            background-color: #fff0fc !important;
-            color: white !important;
-            border: 1px solid #ffb6c1 !important;
-            font-size: 10px;
-            width: 100%;
-            border: none;
-        }
-        .stTextInput>div>div>input {
-            background-color: #fff0fc !important;
-            border: 1px solid #ffb6c1 !important;
-            color: black !important;
-        }
+
+        .stTextInput>div>div>input,
         .stTextArea>div>textarea {
-            background-color: #fff0f5 !important;
-            border: 1px solid #ffb6c1 !important;
+            background-color: #fff0fc !important;
+            border: 2px solid #ffb6c1 !important;
             color: black !important;
         }
 
@@ -59,9 +48,22 @@ st.markdown(
         .stTextInput input::placeholder {
             color: #cc3366 !important;
         }
+
+        .stButton>button {
+            background-color: #fff0fc !important;
+            color: white !important;
+            border: 2px solid #ffb6c1 !important;
+            font-size: 10px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
         label, .stTextInput label, .stTextArea label, .stRadio label {
             color: black !important;
             font-weight: bold;
+        }
+        .stRadio > div {
+            color: black !important;
         }
         /* Sentiment and Hello Message Color */
         .highlight {
