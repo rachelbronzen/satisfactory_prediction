@@ -26,7 +26,7 @@ st.markdown(
         /* GLOBAL STYLES */
         body, .stApp {
             background: linear-gradient(to bottom, #04031a, #0d0b38);
-            color: black;
+            color: white !important;
         }
 
         /* TITLE */
@@ -72,7 +72,7 @@ st.markdown(
 
         /* Message boxes (like st.warning, st.success) */
         .stAlert {
-            color: black;
+            color: white !important;
         }
     </style>
 """, unsafe_allow_html=True)
