@@ -26,16 +26,19 @@ st.markdown(
         .stApp {
             background: linear-gradient(to bottom, #ffffff, #fdefff);
         }
+
         html, body, [class*="css"] {
-            color: black;
+            color: black !important;
             font-family: "Arial", sans-serif;
         }
+
         .big-font {
-            font-size:30px !important;
+            font-size: 30px !important;
             color: #ff66a3;
             text-align: center;
             font-weight: bold;
         }
+
         .stButton>button {
             background-color: #ff99cc;
             color: black;
@@ -45,34 +48,43 @@ st.markdown(
             width: 100%;
             border: none;
         }
+
         .stTextInput>div>div>input,
         .stTextArea>div>textarea {
             background-color: #fff0f5;
             border: 1px solid #ffb6c1;
-            color: black;
+            color: black !important;
         }
-        .stTextArea textarea::placeholder,
-        .stTextInput input::placeholder {
+
+        ::placeholder {
             color: #cc3366;
+            opacity: 0.7;
         }
+
         .stRadio>div>label {
             color: #cc3366;
             font-weight: bold;
         }
-        /* Sentiment and Hello Message Color */
+
         .highlight {
             color: #ff66a3;
             font-weight: bold;
         }
 
-        /* Force all text (even default) to black */
-        html, body, [class*="css"]  {
-            color: black;
+        section[data-testid="stSidebar"] {
+            background-color: #fdefff !important;
+            color: black !important;
         }
+
+        header[data-testid="stHeader"] {
+            background: linear-gradient(to right, #ffffff, #fdefff) !important;
+        }
+
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 
 st.markdown('<p class="big-font">Satisfactory Prediction</p>', unsafe_allow_html=True)
