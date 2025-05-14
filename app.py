@@ -24,7 +24,7 @@ st.markdown(
     """
     <style>
         .stApp {
-            background: linear-gradient(to bottom, #fff0f5, #ffe6f0);
+            background: linear-gradient(to bottom, #ffffff, #fdefff);
             color: black;
         }
         .big-font {
@@ -48,20 +48,29 @@ st.markdown(
             border: 1px solid #ffb6c1;
             color: black;
         }
+        .stTextArea textarea::placeholder,
+        .stTextInput input::placeholder {
+            color: #cc3366;
+        }
         .stRadio>div>label {
             color: #cc3366;
             font-weight: bold;
         }
-        .css-1aumxhk {
-            background-color: transparent;
+        /* Sentiment and Hello Message Color */
+        .highlight {
+            color: #ff66a3;
+            font-weight: bold;
         }
-        h1, h2, h3, h4, h5, h6, p, label, span, div {
+
+        /* Force all text (even default) to black */
+        html, body, [class*="css"]  {
             color: black;
         }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 st.markdown('<p class="big-font">Satisfactory Prediction</p>', unsafe_allow_html=True)
 
