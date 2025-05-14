@@ -23,61 +23,88 @@ with open("label_encoder.pkl", "rb") as f:
 st.markdown(
     """
     <style>
+        /* Background gradient */
         .stApp {
-            background: linear-gradient(to bottom, #ffffff, #fdefff);
+            background: linear-gradient(to bottom, #ffffff, #fdefff) !important;
         }
 
+        /* Override ALL text color to black */
         html, body, [class*="css"] {
             color: black !important;
             font-family: "Arial", sans-serif;
         }
 
+        /* Title */
         .big-font {
             font-size: 30px !important;
-            color: #ff66a3;
+            color: #ff66a3 !important;
             text-align: center;
             font-weight: bold;
         }
 
-        .stButton>button {
-            background-color: #ff99cc;
-            color: black;
+        /* Button */
+        .stButton > button {
+            background-color: #ffccdd !important;
+            color: black !important;
             border-radius: 10px;
             font-size: 16px;
+            font-weight: bold;
             height: 3em;
             width: 100%;
-            border: none;
+            border: 2px solid black;
         }
 
-        .stTextInput>div>div>input,
-        .stTextArea>div>textarea {
-            background-color: #fff0f5;
-            border: 1px solid #ffb6c1;
+        /* Text input (name) */
+        .stTextInput > div > div > input {
+            background-color: #fff0f5 !important;
             color: black !important;
+            border: 1px solid black !important;
         }
 
-        ::placeholder {
-            color: #cc3366;
-            opacity: 0.7;
+        /* Text area (review) */
+        .stTextArea > div > textarea {
+            background-color: #fff0f5 !important;
+            color: black !important;
+            border: 1px solid black !important;
         }
 
-        .stRadio>div>label {
-            color: #cc3366;
+        /* Radio label */
+        .stRadio > div > label {
+            color: #cc3366 !important;
             font-weight: bold;
         }
 
+        /* Placeholder text */
+        ::placeholder {
+            color: #a64d79;
+            opacity: 1;
+        }
+
+        /* Sentiment and greeting */
         .highlight {
             color: #ff66a3;
             font-weight: bold;
         }
 
+        /* Sidebar (optional) */
         section[data-testid="stSidebar"] {
             background-color: #fdefff !important;
             color: black !important;
         }
 
+        /* Header / top bar */
         header[data-testid="stHeader"] {
             background: linear-gradient(to right, #ffffff, #fdefff) !important;
+        }
+
+        /* Ensure markdown containers are black text */
+        .stMarkdown {
+            color: black !important;
+        }
+
+        /* General input wrapper fix */
+        [data-testid="stTextInput"], [data-testid="stTextArea"] {
+            color: black !important;
         }
 
     </style>
