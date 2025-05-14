@@ -25,7 +25,10 @@ st.markdown(
     <style>
         .stApp {
             background: linear-gradient(to bottom, #ffffff, #fdefff);
+        }
+        html, body, [class*="css"] {
             color: black;
+            font-family: "Arial", sans-serif;
         }
         .big-font {
             font-size:30px !important;
