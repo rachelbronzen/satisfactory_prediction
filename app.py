@@ -37,7 +37,7 @@ st.markdown(
             font-weight: bold;
         }
         .stButton>button {
-            background-color: black !important;
+            background-color: #fff0fc !important;
             color: white !important;
             border-radius: 10px;
             font-size: 16px;
@@ -46,7 +46,7 @@ st.markdown(
             border: none;
         }
         .stTextInput>div>div>input {
-            background-color: black !important;
+            background-color: #fff0fc !important;
             border: 1px solid #ffb6c1 !important;
             color: white !important;
         }
