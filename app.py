@@ -19,7 +19,51 @@ with open("label_encoder.pkl", "rb") as f:
     label_encoder = pickle.load(f)
 
 
-# Streamlit UI
+#STREAMLIT APP
+st.markdown(
+    """
+    <style>
+        body, .stApp {
+            background-color: #ffe6f0;
+        }
+        .big-font {
+            font-size:30px !important;
+            color: #ff66a3;
+            text-align: center;
+            font-weight: bold;
+        }
+        .stButton>button {
+            background-color: #ff99cc;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            height: 3em;
+            width: 100%;
+        }
+        .stTextInput>div>div>input {
+            background-color: #fff0f5;
+        }
+        .stTextArea>div>textarea {
+            background-color: #fff0f5;
+        }
+        .stRadio>div>label {
+            color: #cc3366;
+            font-weight: bold;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# 🎀 UI
+st.markdown('<p class="big-font">🎀 Satisfactory Prediction App 🎀</p>', unsafe_allow_html=True)
+
+# 💌 Minta nama user
+name = st.text_input("Siapa namamu, bestie? 🥰")
+
+st.success(f"Halo {name}! ✨ Yuk, masukkan ulasanmu di bawah ini 💖")
+
+
 st.title("Satisfactory Prediction")
 
 user_input = st.text_area("Review:")
