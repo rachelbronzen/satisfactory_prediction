@@ -25,13 +25,13 @@ st.markdown(
     <style>
         /* GLOBAL STYLES */
         body, .stApp {
-            background-color: white;
+            background: linear-gradient(to bottom, #752540, #b42053);
             color: black;
         }
 
         /* TITLE */
         .big-font {
-            font-size: 36px;
+            font-size: 30px;
             color: #ff007e;
             font-weight: bold;
             text-align: center;
