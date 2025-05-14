@@ -31,7 +31,7 @@ st.markdown(
 
         /* TITLE */
         .big-font {
-            font-size: 40px;
+            font-size: 40px !important;
             color: #efa0cd;
             font-weight: bold;
             text-align: center;
@@ -39,7 +39,7 @@ st.markdown(
 
         /* SUBTITLE */
         .stMarkdown h2, .stMarkdown h3, .stMarkdown h4 {
-            color: #f5cae2;
+            color: #9b1859;
         }
 
         /* TEXT INPUT, TEXT AREA, RADIO, BUTTON */
@@ -82,7 +82,7 @@ st.markdown('<p class="big-font">Satisfactory Prediction</p>', unsafe_allow_html
 
 name = st.text_input("Hello! What is your name? 👋", placeholder="Your Name")
 
-st.markdown(f'<div style="color:#ff66a3; font-weight:bold;">Hello {name}! Thank you for using our app. Please enter your review below:</div>', unsafe_allow_html=True)
+st.markdown(f'<div style="color:#f5cae2; font-weight:bold;">Hello {name}! Thank you for using our app. Please enter your review below:</div>', unsafe_allow_html=True)
 
 user_input = st.text_area("Review:")
 model_choice = st.radio("Choose Model:", ["CNN", "Logistic Regression"])
@@ -106,5 +106,5 @@ if st.button("Predict"):
     score = label_encoder.inverse_transform([score_index])[0]
     st.write(f"**Score Prediction {model_choice} :** {score}")
     sentiment = get_sentiment(user_input)
-    st.markdown(f'<div style="color:#ff66a3; font-weight:bold;">Sentiment Analysis: {sentiment}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div style="color:#f5cae2; font-weight:bold;">Sentiment Analysis: {sentiment}</div>', unsafe_allow_html=True)
     st.stop()
