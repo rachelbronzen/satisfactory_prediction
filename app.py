@@ -31,7 +31,7 @@ st.markdown(
 
         /* TITLE */
         .big-font {
-            font-size: 30px;
+            font-size: 40px;
             color: #efa0cd;
             font-weight: bold;
             text-align: center;
@@ -39,7 +39,7 @@ st.markdown(
 
         /* SUBTITLE */
         .stMarkdown h2, .stMarkdown h3, .stMarkdown h4 {
-            color: #9b1859;
+            color: #f5cae2;
         }
 
         /* TEXT INPUT, TEXT AREA, RADIO, BUTTON */
