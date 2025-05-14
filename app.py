@@ -25,14 +25,14 @@ st.markdown(
     <style>
         /* GLOBAL STYLES */
         body, .stApp {
-            background: linear-gradient(to bottom, #2b0615, #460b23);
+            background: linear-gradient(to bottom, #04031a, #0d0b38);
             color: black;
         }
 
         /* TITLE */
         .big-font {
             font-size: 30px;
-            color: #ff007e;
+            color: #efa0cd;
             font-weight: bold;
             text-align: center;
         }
@@ -45,9 +45,8 @@ st.markdown(
         /* TEXT INPUT, TEXT AREA, RADIO, BUTTON */
         input[type="text"],
         textarea,
-        .stTextInput > div > div > input,
+        .stTextInput input,
         .stTextArea textarea,
-        .stRadio > div,
         .stButton > button {
             background-color: #ffe3f3 !important;
             color: #e87fa3 !important;
