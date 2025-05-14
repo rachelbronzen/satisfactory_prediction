@@ -23,95 +23,51 @@ with open("label_encoder.pkl", "rb") as f:
 st.markdown(
     """
     <style>
-        /* Background gradient */
         .stApp {
-            background: linear-gradient(to bottom, #ffffff, #fdefff) !important;
+            background: linear-gradient(to bottom, #ffffff, #fdefff);
         }
-
-        /* Override ALL text color to black */
         html, body, [class*="css"] {
             color: black !important;
             font-family: "Arial", sans-serif;
         }
-
-        /* Title */
         .big-font {
-            font-size: 30px !important;
-            color: #ff66a3 !important;
+            font-size:30px !important;
+            color: #ff66a3;
             text-align: center;
             font-weight: bold;
         }
-
-        /* Button */
-        .stButton > button {
-            background-color: #ffccdd !important;
-            color: black !important;
+        .stButton>button {
+            background-color: #ff99cc;
             border-radius: 10px;
             font-size: 16px;
-            font-weight: bold;
             height: 3em;
             width: 100%;
-            border: 2px solid black;
+            border: none;
+            color: black;
         }
-
-        /* Text input (name) */
-        .stTextInput > div > div > input {
-            background-color: #fff0f5 !important;
-            color: black !important;
-            border: 1px solid black !important;
+        .stTextInput>div>div>input,
+        .stTextArea>div>textarea {
+            background-color: #fff0f5;
+            border: 1px solid #ffb6c1;
+            color: black;
         }
-
-        /* Text area (review) */
-        .stTextArea > div > textarea {
-            background-color: #fff0f5 !important;
-            color: black !important;
-            border: 1px solid black !important;
+        .stTextArea textarea::placeholder,
+        .stTextInput input::placeholder {
+            color: #cc3366;
         }
-
-        /* Radio label */
-        .stRadio > div > label {
-            color: #cc3366 !important;
+        .stRadio>div>label {
+            color: black;
             font-weight: bold;
         }
-
-        /* Placeholder text */
-        ::placeholder {
-            color: #a64d79;
-            opacity: 1;
-        }
-
-        /* Sentiment and greeting */
+        /* Sentiment and Hello Message Color */
         .highlight {
             color: #ff66a3;
             font-weight: bold;
         }
-
-        /* Sidebar (optional) */
-        section[data-testid="stSidebar"] {
-            background-color: #fdefff !important;
-            color: black !important;
-        }
-
-        /* Header / top bar */
-        header[data-testid="stHeader"] {
-            background: linear-gradient(to right, #ffffff, #fdefff) !important;
-        }
-
-        /* Ensure markdown containers are black text */
-        .stMarkdown {
-            color: black !important;
-        }
-
-        /* General input wrapper fix */
-        [data-testid="stTextInput"], [data-testid="stTextArea"] {
-            color: black !important;
-        }
-
     </style>
     """,
     unsafe_allow_html=True
 )
-
 
 
 st.markdown('<p class="big-font">Satisfactory Prediction</p>', unsafe_allow_html=True)
