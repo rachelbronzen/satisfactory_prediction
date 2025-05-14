@@ -55,16 +55,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# 🎀 UI
-st.markdown('<p class="big-font">🎀 Satisfactory Prediction App 🎀</p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">Satisfactory Prediction</p>', unsafe_allow_html=True)
 
-# 💌 Minta nama user
-name = st.text_input("Siapa namamu, bestie? 🥰")
+name = st.text_input("Hello! What is your name? 👋", placeholder="Your Name")
 
-st.success(f"Halo {name}! ✨ Yuk, masukkan ulasanmu di bawah ini 💖")
-
-
-st.title("Satisfactory Prediction")
+st.success(f"Hello {name}! Thank you for using our app. Please enter your review below:")
 
 user_input = st.text_area("Review:")
 model_choice = st.radio("Choose Model:", ["CNN", "Logistic Regression"])
