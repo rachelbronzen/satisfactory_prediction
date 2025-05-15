@@ -8,7 +8,7 @@ positive_words = [
     "mantab", "mantap", "nice", "bermanfaat", "lancar", "senang", "terbaik",
     "mantul", "alhamdulillah", "enak", "bener", "benar", "terbantu", "makasih",
     "mempermudah", "berguna", "praktis", "menyenangkan", "gampang",
-    "jos", "hemat", "proses", "bantu", "maju", "cinta"
+    "jos", "hemat", "proses", "bantu", "maju", "cinta", "terjangkau", "rekomendasi"
 ]
 negative_words = [
     "tidak", "ga", "gak", "lama","lambat", "tolong", "kenapa", "malah", "sekali",
