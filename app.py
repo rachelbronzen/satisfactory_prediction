@@ -131,4 +131,11 @@ if st.button("Predict"):
             <b>Highlighted Sentiment:</b><br>{highlighted}
         </div>
     ''', unsafe_allow_html=True)
+
+
+    st.markdown(f'''
+        <div style=" color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+            <b>Model Used:</b> {model_choice}
+        </div>
+    ''', unsafe_allow_html=True)
     st.stop()
