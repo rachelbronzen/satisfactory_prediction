@@ -107,6 +107,11 @@ if st.button("Predict"):
         </div>
     ''', unsafe_allow_html=True)
     sentiment = get_sentiment(user_input)
+    st.markdown(f'''
+        <div style="background-color: #06051f !important; color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+            <b>Sentiment Analysis:</b> {sentiment}
+        </div>
+    ''', unsafe_allow_html=True)
     
     words = user_input.split()
     highlighted = ""
