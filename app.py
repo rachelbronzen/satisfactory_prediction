@@ -125,11 +125,14 @@ if st.button("Predict"):
             highlighted += f'<span style="color:#a39191; font-weight:bold;">{word}</span> '
         else:
             highlighted += f'{word} '
-
     st.markdown(f'''
         <div style="background-color: #06051f !important; color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
             <b>Highlighted Sentiment:</b><br>{highlighted}
         </div>
     ''', unsafe_allow_html=True)
-
+    st.markdown('''
+        <div style="background-color: white; color: #c4547b; padding: 15px; border-radius: 10px; margin-bottom: 15px; text-align: center;">
+            Have a great day!
+        </div>
+    ''', unsafe_allow_html=True)
     st.stop()
