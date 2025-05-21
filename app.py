@@ -101,7 +101,11 @@ if st.button("Predict"):
             score_index = np.argmax(pred)
     
     score = label_encoder.inverse_transform([score_index])[0]
-    st.write(f"**Score Prediction {model_choice} :** {score}")
+    st.markdown(f'''
+        <div style="background-color: #06051f !important; color: #222 !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+            <b>Score Prediction ({model_choice}):</b> {score}
+        </div>
+    ''', unsafe_allow_html=True)
     sentiment = get_sentiment(user_input)
     st.markdown(f'''
         <div style="background-color: #06051f !important; color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
