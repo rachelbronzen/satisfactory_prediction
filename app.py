@@ -1,4 +1,5 @@
 import streamlit as st
+st.cache_data.clear() 
 import joblib
 import pickle
 from tensorflow.keras.models import load_model
@@ -130,10 +131,4 @@ if st.button("Predict"):
             <b>Highlighted Sentiment:</b><br>{highlighted}
         </div>
     ''', unsafe_allow_html=True)
-    st.markdown('''
-        <div style="background-color: white; color: #c4547b; padding: 15px; border-radius: 10px; margin-bottom: 15px; text-align: center;">
-            Have a great day!
-        </div>
-    ''', unsafe_allow_html=True)
-    name = st.text_input("Are you happy")
     st.stop()
