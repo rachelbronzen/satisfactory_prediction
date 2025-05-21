@@ -101,14 +101,10 @@ if st.button("Predict"):
             score_index = np.argmax(pred)
     
     score = label_encoder.inverse_transform([score_index])[0]
-    st.markdown(f'''
-        <div style=" color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
-            <b>Score Prediction ({model_choice}):</b> {score}
-        </div>
-    ''', unsafe_allow_html=True)
+    st.write(f"**Score Prediction {model_choice} :** {score}")
     sentiment = get_sentiment(user_input)
     st.markdown(f'''
-        <div style=" color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+        <div style="background-color: #06051f !important; color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
             <b>Sentiment Analysis:</b> {sentiment}
         </div>
     ''', unsafe_allow_html=True)
@@ -127,15 +123,9 @@ if st.button("Predict"):
             highlighted += f'{word} '
 
     st.markdown(f'''
-        <div style=" color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+        <div style="background-color: #06051f !important; color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
             <b>Highlighted Sentiment:</b><br>{highlighted}
         </div>
     ''', unsafe_allow_html=True)
 
-
-    st.markdown(f'''
-        <div style=" color: white !important; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
-            <b>Model Used:</b> {model_choice}
-        </div>
-    ''', unsafe_allow_html=True)
     st.stop()
