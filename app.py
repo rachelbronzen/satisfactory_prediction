@@ -135,4 +135,5 @@ if st.button("Predict"):
             Have a great day!
         </div>
     ''', unsafe_allow_html=True)
+    name = st.text_input("Are you happy")
     st.stop()
