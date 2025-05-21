@@ -119,20 +119,4 @@ if st.button("Predict"):
             highlighted += f'{word} '
 
     st.markdown("<b>Highlighted Sentiment:</b><br>" + highlighted, unsafe_allow_html=True)
-    st.markdown(
-    f"""
-    <hr style="border: none; height: 1px; background-color: #444;">
-    <div style="color:white; font-size:16px; margin-top:20px;">
-        <b>Summary:</b><br>
-        <ul>
-            <li><b>Name:</b> {name}</li>
-            <li><b>Model:</b> {model_choice}</li>
-            <li><b>Predicted Score:</b> {score}</li>
-            <li><b>Sentiment:</b> {sentiment}</li>
-            <li><b>Review:</b> {user_input}</li>
-        </ul>
-    </div>
-    """,
-    unsafe_allow_html=True
-    )
     st.stop()
