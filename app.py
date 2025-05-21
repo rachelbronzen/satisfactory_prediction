@@ -4,7 +4,7 @@ import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
-from lexicon_sentiment import get_sentiment
+from lexicon_sentiment import get_sentiment, positive_words, negative_words, neutral_words
 
 cnn_model = load_model("cnn_model.h5")
 logistic_model = joblib.load("logistic_regression_model.pkl")
@@ -104,4 +104,20 @@ if st.button("Predict"):
     st.write(f"**Score Prediction {model_choice} :** {score}")
     sentiment = get_sentiment(user_input)
     st.markdown(f'<div style="color:#efa0cd; font-weight:bold;">Sentiment Analysis: {sentiment}</div>', unsafe_allow_html=True)
+    
+    words = user_input.split()
+    highlighted = ""
+    for word in words:
+        clean = word.strip(".,!?").lower()
+        if clean in positive_words:
+            highlighted += f'<span style="color:#00ff99; font-weight:bold;">{word}</span> '
+        elif clean in negative_words:
+            highlighted += f'<span style="color:#ff4d4d; font-weight:bold;">{word}</span> '
+        elif clean in neutral_words:
+            highlighted += f'<span style="color:#ff4d4d; font-weight:bold;">{word}</span> '
+        else:
+            highlighted += f'{word} '
+
+    st.markdown("<hr><b>Highlighted Words:</b><br>" + highlighted, unsafe_allow_html=True)
+    
     st.stop()
