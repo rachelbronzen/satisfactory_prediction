@@ -23,13 +23,12 @@ with open("label_encoder.pkl", "rb") as f:
 st.markdown(
 """
     <style>
-        /* GLOBAL STYLES */
         body, .stApp {
             background: linear-gradient(to bottom, #04031a, #0d0b38);
             color: white !important;
         }
 
-        /* TITLE */
+        /* title */
         .big-font {
             font-size: 35px !important;
             color: #f084c1;
@@ -37,28 +36,26 @@ st.markdown(
             text-align: center;
         }
 
-        /* SUBTITLE */
+        /* subtitile */
         .stMarkdown h2, .stMarkdown h3, .stMarkdown h4 {
             color: #9b1859;
         }
 
-        /* TEXT INPUT, TEXT AREA, RADIO, BUTTON */
+        /* text input, area, radio, button */
         input[type="text"],
         textarea,
         .stTextInput input,
         .stTextArea textarea,
         .stButton > button {
             background-color: #ffe3f3 !important;
-            color: #e87fa3 !important;
+            color: #c4547b !important;
             border: none;
         }
 
-        /* Make radio text pink too */
         .stRadio label {
             color: #e87fa3 !important;
         }
 
-        /* Button hover effect */
         .stButton > button:hover {
             background-color: #f8cde0 !important;
             color: #9b1859 !important;
@@ -70,7 +67,7 @@ st.markdown(
             opacity: 1;
         }
 
-        /* Message boxes (like st.warning, st.success) */
+        /* Message box (st.warning, st.success) */
         .stAlert {
             color: white !important;
         }
