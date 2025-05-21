@@ -114,7 +114,7 @@ if st.button("Predict"):
         elif clean in negative_words:
             highlighted += f'<span style="color:#ff4d4d; font-weight:bold;">{word}</span> '
         elif clean in neutral_words:
-            highlighted += f'<span style="color:#ff4d4d; font-weight:bold;">{word}</span> '
+            highlighted += f'<span style="color:#a39191; font-weight:bold;">{word}</span> '
         else:
             highlighted += f'{word} '
 
