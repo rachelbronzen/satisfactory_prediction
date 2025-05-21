@@ -103,7 +103,7 @@ if st.button("Predict"):
     score = label_encoder.inverse_transform([score_index])[0]
     st.write(f"**Score Prediction {model_choice} :** {score}")
     sentiment = get_sentiment(user_input)
-    st.markdown(f'<div style="color:#efa0cd; font-weight:bold;">Sentiment Analysis: {sentiment}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div style="color:white; font-weight:bold;">Sentiment Analysis: {sentiment}</div>', unsafe_allow_html=True)
     
     words = user_input.split()
     highlighted = ""
@@ -118,6 +118,6 @@ if st.button("Predict"):
         else:
             highlighted += f'{word} '
 
-    st.markdown("<hr><b>Highlighted Words:</b><br>" + highlighted, unsafe_allow_html=True)
+    st.markdown("<b>Highlighted Sentiment:</b><br>" + highlighted, unsafe_allow_html=True)
     
     st.stop()
